@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>Block, Stepper, Sciswords!</title>
+<head>
+<link rel="stylesheet" href="css/combatestyle.css">
+<link rel="stylesheet" href="css/arena.css">
+<link rel="stylesheet" href="css/pvp.css">
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="jq/jqmovs.js">//cambios generales aquí</script>
+<script type="text/javascript" src="jq/turnpvp.js"></script>
+<script type="text/javascript" src="jq/jqchamps.js"></script>
+<script type="text/javascript" src="jq/jqutil.js"></script>
+<script type="text/javascript" src="jq/looppvp.js"></script> 
+<script type="text/javascript" src="jq/jqarmas.js"></script> 
+  
+<style>
+@font-face {
+      font-family: 'score2';
+      src: url(fontypes/score2.ttf);
+}
+@font-face {
+      font-family: 'score';
+      src: url(fontypes/comic1.ttf);
+    }
+@font-face {
+      font-family: 'rojo';
+      src: url(fontypes/rojo1.ttf);
+}
+@font-face {
+      font-family: 'azul';
+      src: url(fontypes/azul1.ttf);
+}
+ @font-face {
+      font-family: 'amarillo';
+      src: url(fontypes/amarillo1.ttf);
+    }
+ @font-face {
+      font-family: 'comic';
+      src: url(fontypes/comic1.ttf);
+}
+@font-face {
+      font-family: 'comic2';
+      src: url(fontypes/comic2.ttf);
+} 
+</style>
+
+<audio class="bso"><source src="audio/bso/rblanco.mp3" type="audio/mpeg"></audio>
+<audio autoplay class="bso"><source src="audio/bso/menu.mp3" type="audio/mpeg"></audio>
+<audio autoplay class="bso"><source src="audio/bso/hard1.mp3" type="audio/mpeg"></audio>
+<audio autoplay class="bso"><source src="audio/bso/hard2.mp3" type="audio/mpeg"></audio>   
+<audio autoplay class="bso"><source src="audio/bso/hard3.mp3" type="audio/mpeg"></audio>
+<audio autoplay class="bso"><source src="audio/bso/trepidante.mp3" type="audio/mpeg"></audio>	
+<audio class="efecto"><source src="audio/effect/aire.mp3" type="audio/mpeg"></audio>
+<audio class="efecto"><source src="audio/effect/bloquea.mp3" type="audio/mpeg"></audio>
+<audio class="efecto"><source src="audio/effect/golpea.mp3" type="audio/mpeg"></audio>
+<audio class="efecto"><source src="audio/effect/salpica.mp3" type="audio/mpeg"></audio>  
+<audio class="efecto"><source src="audio/effect/choque.mp3" type="audio/mpeg"></audio>
+<audio class="efecto"><source src="audio/effect/desliza.mp3" type="audio/mpeg"></audio> 
+<audio class="efecto"><source src="audio/effect/cura.mp3" type="audio/mpeg"></audio>     
+</head>
+<body style="overflow:hidden">
+
+    <div id="todo" style="display: none;">
+    <div id="exit" style="background-image: url('src/bandera.png')"></div>    
+    <div id="contadores">  
+      <div id="pv" style="background-image: url('carac/vida.png')"></div>
+      <div id="durab" style="background-image: url('carac/durab.png')"></div>
+      <div id="items"></div>
+      <div id="score"></div>
+    </div>
+    
+    <div id="tablamalo">
+        <div id="malo"></div>
+        <div id="frasem" style="background-image:url('carac/bocadillo.png')"></div>
+        <div id="armam"></div>
+        <div id="accionm"></div>
+        <div id="pvm"></div>
+        <div id="durabm"></div>
+    </div>
+    
+    <div id="prota">
+        <div id="frase" style="background-image:url('carac/bocadilloa.png')"></div>
+        <div id="cuerpo"></div>
+        <div id="armap"></div>
+    </div>
+    <div id="botones">
+        <button id="retro" style="background-image: url('img/atras.png')">
+            </button>
+        <button id="def" style="background-image: url('img/defensa.png')">
+            </button>
+        <button id="at" style="background-image: url('img/ataca.png')">
+            </button>
+        <button id="av" style="background-image: url('img/avance.png')">
+            </button>
+        <button id="time" style="background-image: url('src/time.png')">
+            </button>
+    </div> 
+    <div id="botones2">
+        <button id="ab" style="background-image: url('img/abajo.png')">
+            </button>
+        <button id="ar" style="background-image: url('img/arriba.png')">
+            </button>
+        <button id="der" style="background-image: url('img/dcha.png')">
+            </button>
+    </div>
+    <div id="botones3">
+        <button id="opc1" style="background-image: url('img/1.png')">
+            </button>
+        <button id="opc2" style="background-image: url('img/2.png')">
+            </button>
+        <button id="opc3" style="background-image: url('img/3.png')">
+            </button>
+    </div>
+    </div><!--Existe TODO, el juego y OUT_GAME, el menú, lista de conectados, etc-->
+
+    <div id="out_game">
+<!--crea un div para contener el juego en si-->
+        <div id="tit" background="src/credits2.png"></div>
+        <div id="cruce" background="img/cruce.png"></div>
+        <div id="lista_players">
+        <p>COMPRUEBA TU CONEXION</p>
+        </div>
+        <br><br>
+                <!--action espera que enviemos un parametro-->
+    </div>      <!--attack está en player.js-->
+</body>
+</html>

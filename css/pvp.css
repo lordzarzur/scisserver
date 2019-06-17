@@ -1,0 +1,128 @@
+#out_game{
+    width:100%; height:850px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:auto;
+}
+#tit{
+    z-index:9;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:absolute;
+    background-image: url(../src/credits2.png);
+    width:120%;height:20%;
+    top:2%;left:-10%
+}
+@keyframes cruzar{
+  0% { transform:rotate(15deg) scale(1.4); }
+  20% { transform:translateX(-10px) rotate(35deg) scale(1.35) skewY(6deg); }
+  25% { transform:translateX(-10px) rotate(4deg) skewY(3deg) scale(1.35);}
+  98% { transform:rotate(20deg) skewY(50deg) scale(1.4);}
+  100% { transform:rotate(-2deg) scale(1.35); }    
+}
+#cruce{
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:absolute;
+    z-index:6;
+    background-image: url(../img/cruce.png);
+    left:60%;width:35%;
+    bottom:0%;height:60%;
+    animation:cruzar 3s infinite ease;
+}
+#lista_players{
+    text-align: center;
+    margin:auto;
+    margin-top: 5%;
+    z-index:7;
+    top: 20%;
+    width:98%;height:100%;
+    position: absolute;
+    text-align: center;
+    color:black;
+    font-family:score;
+}
+p{  font-family:comic;
+    padding-top:1%;
+    font-size:30pt;
+    margin: auto;
+    width:100%;
+    font-style: oblique;
+    color:floralwhite;
+    text-align: center;
+    z-index:8
+}
+/*
+@keyframes pega{
+  0% { transform:rotate(-80deg) scale(1.4); }
+  20% { transform:translateX(-10px) rotate(45deg) scale(1.35) skewY(15deg); }
+  25% { transform:translateX(-10px) rotate(45deg) skewY(10deg) scale(1.35);}
+  98% { transform:rotate(-80deg) skewY(0deg) scale(1.4);}
+  100% { transform:rotate(-80deg) scale(1.4); }    
+}
+@keyframes recibe {
+  0% { transform: scale(1.4);}
+  20% { transform: scale(1.4) skewY(0deg) }
+  25% { transform: scale(1.25) skewY(5deg) }
+  98% { transform: scale(1.4) skewY(0deg) }
+  100% { transform: scale(1.4);}
+}
+#escudo{
+    animation:recibe 3s infinite ease;
+}
+#scisword{
+    z-index:-1;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:absolute;
+    left:20%;width:50%;
+    bottom:-30%;height:100%;
+    animation:pega 3s infinite ease;
+}*/
+
+#contadores {
+    font-family:score;
+    font-size:18pt;
+}
+#pv {
+}
+#durab {
+}
+#items {
+}
+#malo{
+}
+#frasem{ 
+    font-family: dummie;
+    font-size:12pt;
+    top:10px;
+}
+#armam{
+    height:60%;width:80%;
+    top:10%;left:-15%;
+}
+#accionm{
+}
+#prota{
+}
+#frase{
+}
+#cuerpo{
+}
+#armap{  
+}
+#botones{
+}
+#retro{
+}
+#def{  
+}
+#at{  
+}
+#av{ 
+}
+#time{ 
+}
