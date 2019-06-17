@@ -1,0 +1,456 @@
+/*Posicionamiento de los elementos*/
+
+/*basados en las pruebas iniciales:
+siendo "todo" =width:467px; height:629px;
+    
+    xiaomiredmi note 6---19:9 (2.1) - 2280x1080px
+                ~ width 82%  height 114%
+                ~ width 380  height 800
+    bq m10---- 8:5 (1.6) - 1280x800px
+                ~ width 150%?  height ~ 140%?
+                ~ width 700px  height ~ 1120px
+
+    huawei rafa           
+
+    */
+body{
+    background-image: url(../src/portada2.png);
+    background-position:50% 18%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#todo{
+    background-size:contain;
+    background-repeat: no-repeat;
+    width:467px; height:629px;
+    position: relative;
+    margin:auto;
+}
+#exit{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0px;right:0px;
+    width:20%;height:15%;
+    z-index: 10;
+    font-family: score;
+    margin: auto;text-align: right;
+    font-size: 8pt;
+    text-decoration: none;
+}
+
+#contadores {
+    z-index: 1;
+    padding: 0px 0;
+    width:98%;height:20%;
+    position: absolute;
+    text-align: center;
+    font-size:25pt; font-style: bold;
+    color:lightskyblue;
+}
+#pv {
+  background-position:50% 50%;
+  background-size:contain;
+  background-repeat: no-repeat;    
+  width: 75%;height:22%;
+  margin: auto;border-radius: 20%;
+  margin-top: 5px;
+  padding-top:5px;
+  position: relative;
+  background-color: indianred;
+}
+#durab {
+  background-position:50% 50%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 60%;height:20%;
+  padding-top:5px;border-radius: 20%;
+  margin: auto;top: 20%;
+  background-color: lightgrey;    
+}
+#items {
+  background-size:contain;
+  background-repeat: no-repeat;    
+  width: 25%;height:30%;
+  border: 1px; border-radius: 20%;
+  border-color: rgb(25, 92, 39);
+  padding-top:2%;
+  margin:auto;
+  text-align: center;
+  position: relative;
+}
+#score {
+  bottom:0px;height:400px;
+  color:black;
+}
+
+#tablamalo{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    text-align: center;
+    height:70%;width:52%;
+    right:5%;top: 22%;
+}
+#malo{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height:100%;width:100%;
+}
+#frasem{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    text-align: center;
+    font-size:8pt;
+    top:-10%;
+    width:100%;height:20%;
+    opacity:0.9;
+}
+#armam{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height:60%;width:80%;
+    top:10%;left:-15%;
+    z-index: 2;
+}
+#accionm{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height:15%;width:25%;
+    bottom:35%;right:10%;
+    z-index: 2;
+}
+#pvm {   
+  width: 60%; height:5%;
+  bottom:19%;right:20%;
+  margin: auto;border-radius: 10%;
+  position: absolute;
+  background-position: right;
+  background-size:contain;
+  background-repeat: no-repeat; 
+  background-color: darkred;
+  color:goldenrod;
+  font-family: score2;
+  z-index: 2;
+}
+#durabm {
+  width: 50%; height:5%; 
+  bottom:14%;right:20%;
+  position: absolute;
+  margin: auto;border-radius: 10%;
+  background-position: right;
+  background-size:contain;
+  background-repeat: no-repeat; 
+  background-color: dimgrey;   
+  z-index: 2; 
+}
+
+#prota{
+    position: absolute;
+    bottom:0%;left:0%;
+    width:55%;height:50%;
+    z-index:8;
+}
+#frase{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position:relative;
+    padding-top:10%;
+    padding-right: 45px;
+    padding-left: 25px;
+    top:-38%;
+    text-align: center;
+    height:60%;width:80%;
+    z-index:7; opacity:1;
+    font-size: 14pt;
+}
+#cuerpo{
+    background-size:contain;
+    background-repeat: no-repeat;
+    z-index: 4;
+    position:absolute;
+    bottom:-10%;left:-10%;
+    height:100%;width:95%;
+}
+#armap{
+    z-index: 3;
+    position:absolute;
+    background-size:contain;
+    background-repeat: no-repeat;
+    bottom:20%;right:-10%;
+    height:75%;width:70%;
+}
+
+#botones{
+    background-size:contain;
+    background-repeat: no-repeat;  
+    background-position: center;
+    z-index: 10;
+    height:130px;
+    bottom:8px;
+    left:20px;
+    right:20px;
+    position:absolute;
+    z-index: 10;
+}
+#retro{
+    background-size:contain;
+    background-repeat: no-repeat;    
+    position: absolute;
+    height:60%;width:100px;
+    background-color: transparent;
+    border:none;
+}
+#def{
+    background-repeat: no-repeat;   
+    background-size:contain;
+    position: absolute;
+    height:60%;width:100px;
+    left:25%;top:20%;
+    background-color: transparent;
+    border:none;
+}
+#at{
+    background-size:contain;
+    position: absolute;
+    background-repeat: no-repeat;  
+    height:60%;width:100px;
+    left:55%;top:20%;
+    background-color: transparent;
+    border:none;
+}
+#av{
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: absolute;
+    height:60%;width:100px;
+    left:80%; 
+    background-color: transparent;
+    border:none;
+}
+
+#botones2{
+    background-size:contain;
+    z-index: 1;
+    height:50%;
+    bottom:15%;
+    left:15%; right:15%;
+    position:absolute;
+    z-index: 10;
+}
+#ab{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height:30%;width:100px;
+    left:30%; top:60%;
+    background-color: transparent;
+    border:none;
+}
+#ar{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height:30%;width:100px;
+    left:30%;top:0px;
+    background-color: transparent;
+    border:none;
+}
+#der{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height:30%;width:100px;
+    left:70%;top:30%; 
+    background-color: transparent;
+    border:none;
+}
+
+#botones3{
+    background-size:contain;
+    z-index: 1; width:110%;
+    left:-10%; height:50%;
+    bottom:15%;
+    position:absolute;
+    z-index: 10;
+}
+#opc1{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height:150px;width:33%;
+    left:0%; top:25%;
+    background-color: transparent;
+    border:none;
+}
+#opc2{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: relative;
+    height:150px;width:33%;   
+    left:33%;top:25%;
+    background-color: transparent;
+    border:none;
+}
+#opc3{
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height:150px;width:33%;
+    left:66%;top:25%; 
+    background-color: transparent;
+    border:none;
+}
+
+#time{
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 9;
+    background-color:grey;
+    position: absolute;
+    height:15%;width:100%;
+    bottom:0px; margin:0px auto;
+    border-style: hidden;
+    border-radius:6%;
+}
+@media (max-width:350px){       /*versión móvil, preventiva */
+body{
+    background-size: 900px 900px;
+}
+#todo{
+    width:300px; height:620px;}
+}
+@media (max-width:400px){       /*versión móvil, preventiva */
+body{
+    background-size: 1050px 1050px;
+}
+#todo{
+    width:350px; height:700px;}
+}
+
+@media (max-width:520px){       /*versión móvil,2:1*/
+body{
+    background-size: 1400px 1400px;
+}
+#todo{
+    width:350px; height:700px;}
+}
+
+@media (min-height:950px){     /*altura de tablet*/
+body{
+     background-size: 1300px 1300px;
+}
+#todo{
+    width:600px; height:950px;
+}
+#contadores {
+    font-size:21pt;}
+#pv { 
+  width: 75%;height:22%;
+  margin-top: 5px; padding-top:5px;}
+#durab {
+    }
+#items {  
+  width: 25%;height:30%;}
+#score {
+  bottom:0px;height:400px;}
+#tablamalo{
+    height:60%;width:45%;
+    right:5%;top: 22%;}
+#malo{
+    }
+#frasem{
+    font-size:8pt;
+    top:10px;right:0px;
+    width:100%;height:20%;}
+#armam{
+    }
+#accionm{
+    height:15%;width:25%;
+    bottom:35%;right:10%;
+}
+#pvm {   
+    width: 60%; height:5%;
+    bottom:19%;right:20%;}
+#durabm {
+    width: 50%; height:5%; 
+    bottom:14%;right:20%;}
+#prota{
+    bottom:0%;left:0%;
+    width:55%;height:50%;}
+#frase{
+    padding-top:10%;
+    margin-right: 45px;
+    margin-left: 25px;
+    top:-38%;
+    height:60%;width:120%;
+    font-family:comic;
+    font-size: 18pt;}
+#cuerpo{
+    bottom:-10%;left:-10%;
+    height:100%;width:95%;}
+#armap{
+    bottom:20%;right:-10%;
+    height:75%;width:70%;}
+#botones{
+    height:130px; bottom:8px;
+    left:2%; right:2%;}
+#retro{
+    height:60%;width:21%;}
+#def{
+    height:60%;width:21%;
+    left:25%;top:20%;}
+#at{
+    height:60%;width:21%;
+    left:55%;top:20%;}
+#av{
+    height:60%;width:21%;
+    left:80%; }
+#botones2{
+    height:50%; bottom:15%;
+    left:15%; right:15%;}
+#ab{
+    height:30%;width:30%;
+    left:30%; top:60%;}
+#ar{
+    height:30%;width:30%;
+    left:30%;top:0px;}
+#der{
+    height:30%;width:30%;
+    left:70%;top:30%; }
+#botones3{
+    width:100%;left:-10%;
+    height:50%;bottom:15%;
+}
+#repara{
+    height:150px;width:25%;
+    left:5%; top:200px;}
+#afila{
+    height:150px;width:25%;   
+    left:35%;top:200px;
+}
+#cura{
+    height:150px;width:25%;
+    left:70%;top:200px;}
+
+@media (min-height:1200px){       /*altura de pantalla extensa, a tope*/
+body{
+    background-size: 1300px 1300px;
+   }
+#todo{
+    width:650px; height:1400px;}
+}
+@media (min-height:1500px){       /*casi inviable */
+body{
+    background-size: 1300px 1300px;
+   }
+#todo{
+    width:600px; height:950px;
+   }
+}
+/*<link rel="stylesheet" href="/movil.css" media="only screen and (max-width: 700px)">*/
