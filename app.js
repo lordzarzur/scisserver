@@ -421,6 +421,6 @@ io.on('connection', function(socket){       //al iniciar
     */
 });
 
-http.listen(process.env.port, function(){
+http.listen(process.env.PORT, function(){
 	console.log('escucha en localhost:5000');//puerto 5000
 });
